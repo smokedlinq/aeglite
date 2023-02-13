@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B8FC1FFF-3486-448E-8A80-E4A6C23C7627}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aeglite", "src\aeglite\aeglite.csproj", "{3562BEC4-A4BD-4C95-A04B-C1C0B4B4F2DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{FE27C85B-9D13-47C9-9531-579C0E3423BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aeglite.Tests", "test\aeglite.Tests\aeglite.Tests.csproj", "{7546C7FC-374B-4436-9029-759D7D306E12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3562BEC4-A4BD-4C95-A04B-C1C0B4B4F2DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3562BEC4-A4BD-4C95-A04B-C1C0B4B4F2DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3562BEC4-A4BD-4C95-A04B-C1C0B4B4F2DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3562BEC4-A4BD-4C95-A04B-C1C0B4B4F2DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7546C7FC-374B-4436-9029-759D7D306E12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7546C7FC-374B-4436-9029-759D7D306E12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7546C7FC-374B-4436-9029-759D7D306E12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7546C7FC-374B-4436-9029-759D7D306E12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3562BEC4-A4BD-4C95-A04B-C1C0B4B4F2DD} = {B8FC1FFF-3486-448E-8A80-E4A6C23C7627}
+		{7546C7FC-374B-4436-9029-759D7D306E12} = {FE27C85B-9D13-47C9-9531-579C0E3423BC}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,18 @@
+FROM mcr.microsoft.com/dotnet/sdk:7.0-alpine AS build
+WORKDIR /source
+
+COPY ./*.csproj .
+RUN dotnet restore --use-current-runtime /p:PublishReadyToRun=true
+
+COPY . .
+RUN dotnet publish -c Release -o /app --use-current-runtime /p:PublishTrimmed=true /p:PublishReadyToRun=true /p:PublishSingleFile=true
+
+FROM mcr.microsoft.com/dotnet/runtime-deps:7.0-alpine
+WORKDIR /app
+COPY --from=build /app .
+
+ENV ASPNETCORE_URLS http://+:5000
+EXPOSE 5000
+
+HEALTHCHECK CMD wget -qO- -t1 http://localhost:5000/healthz || exit 1
+ENTRYPOINT ["./aeglite"]
